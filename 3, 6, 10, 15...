@@ -1,0 +1,22 @@
+#include <stdio.h>
+//sequencia 3, 6, 10, 15...
+//Analisando a questao percebi que.. de 1 para 3 eh 2, 3 para 6 eh 3, de 6 para 10 eh 4 e assim suessivamente...
+int main(){
+	
+	int j=3, i= 3, n, auxi;
+	scanf("%d", &n);
+	while(n >= 1){
+		
+		auxi = j;
+		printf("%d ", i);
+		while(auxi>= 1){
+			i++;
+			auxi--;
+		}
+		
+		j++;
+		n--;
+	}
+	
+	return 0;
+}
